@@ -63,7 +63,7 @@ const Footer = () => {
                             <ul className="space-y-2 text-sm">
                                 <li>Email: <a href="mailto:info@hema-mahila.org" className="hover:text-blue-500 transition-colors duration-300">hemamks1992@gmail.com</a></li>
                                 <li>Phone: <a href="tel:1234567890" className="hover:text-blue-500 transition-colors duration-300">+91-9889503191</a></li>
-                                <li>Address: Khanddak(Sikhadi), Varanasi, UP, India (221313)</li>
+                                <li>Address: Khanddak, Sikhadi, Varanasi, UP, India (221403)</li>
                             </ul>
                         </div>
                     </div>
