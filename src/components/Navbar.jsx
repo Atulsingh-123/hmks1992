@@ -80,6 +80,13 @@ const Navbar = () => {
         visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
     };
 
+    const scrollToAbout = () => {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+          aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
     return (
         <section className="relative h-screen flex flex-col">
             {/* Navbar */}
@@ -162,7 +169,7 @@ const Navbar = () => {
                             </motion.p>
 
                             <motion.button
-                                onClick={() => navigate('/projects')}
+                                onClick= {scrollToAbout}
                                 className="mt-6 inline-block bg-green-600 hover:bg-green-700 px-6 py-3 rounded-full text-lg text-white transition-all duration-300 font-serif"
                                 variants={textVariants}
                                 initial="hidden"

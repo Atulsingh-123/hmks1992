@@ -65,7 +65,7 @@ const ContactUs = () => {
                             <h2 className="text-3xl font-bold text-green-600 mb-6 text-center">Our Contact Info</h2>
                             <div className="space-y-4">
                                 <p className="text-lg text-gray-700">
-                                    <strong>Address:</strong> 221313-Khandha(Sikhari), Varanasi, India
+                                    <strong>Address:</strong> 221313-Khandhak(Sikhari), Varanasi, India
                                 </p>
                                 <p className="text-lg text-gray-700">
                                     <strong>Phone:</strong>+91-9889503191

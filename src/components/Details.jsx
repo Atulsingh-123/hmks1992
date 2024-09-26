@@ -19,7 +19,7 @@ const NgoDetails = () => {
   };
 
   return (
-    <section className="py-10 px-4 md:px-6 bg-white text-gray-800">
+    <section id='about' className=" py-10 px-4 md:px-6 bg-white text-gray-800">
       <div className="container mx-auto max-w-4xl">
         <motion.h2
           className="text-2xl md:text-4xl font-bold mb-6 text-center font-serif"
