@@ -1,24 +1,22 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Import framer-motion
-import { useInView } from 'react-intersection-observer'; // Import useInView hook
+import { motion } from 'framer-motion'; 
+import { useInView } from 'react-intersection-observer';
 import { FaLinkedin, FaInstagram, FaTwitterSquare, FaFacebookSquare } from 'react-icons/fa';
 import logo from '../assets/new_logo.png';
 
 const Footer = () => {
-    const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 }); // Intersection observer hook
+    const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 }); 
 
     return (
         <footer className="bg-gray-900 text-gray-300 py-8 md:py-12">
             <motion.div 
                 className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-3 gap-8"
-                ref={ref} // Reference for the observer
-                initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
-                animate={inView ? { opacity: 1, x: 0 } : {}} // Animate when in view
-                transition={{ duration: 0.8 }} // Animation timing
+                ref={ref} 
+                initial={{ opacity: 0, x: -100 }} 
+                animate={inView ? { opacity: 1, x: 0 } : {}} 
+                transition={{ duration: 0.8 }} 
             >
-                {/* Left Section - About the NGO, Logo, and Social Media Links */}
                 <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
-                    {/* Logo and NGO Name */}
                     <img 
                         src={logo} 
                         alt="Hema Mahila Kalyan Samiti Logo" 
@@ -44,11 +42,10 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Middle Section - Navigation Links */}
                 <motion.div
-                    initial={{ opacity: 0, x: 100 }} // Start off-screen to the right
-                    animate={inView ? { opacity: 1, x: 0 } : {}} // Animate when in view
-                    transition={{ duration: 0.8, delay: 0.2 }} // Delay for staggered effect
+                    initial={{ opacity: 0, x: 100 }} 
+                    animate={inView ? { opacity: 1, x: 0 } : {}} 
+                    transition={{ duration: 0.8, delay: 0.2 }} 
                 >
                     <div className="grid grid-cols-2 md:grid-cols-2 gap-8 text-center lg:text-left mt-1 md:mt-20">
                         <div>
@@ -72,11 +69,10 @@ const Footer = () => {
                     </div>
                 </motion.div>
 
-                {/* Quick Links Section */}
                 <motion.div
-                    initial={{ opacity: 0, x: -100 }} // Start off-screen to the left
-                    animate={inView ? { opacity: 1, x: 0 } : {}} // Animate when in view
-                    transition={{ duration: 0.8, delay: 0.4 }} // Stagger delay for last section
+                    initial={{ opacity: 0, x: -100 }} 
+                    animate={inView ? { opacity: 1, x: 0 } : {}} 
+                    transition={{ duration: 0.8, delay: 0.4 }} 
                 >
                     <div className="grid grid-cols-1 md:grid-cols- gap-8 text-center lg:text-left mt-1 md:mt-20">
                         <div>
@@ -92,7 +88,6 @@ const Footer = () => {
                 </motion.div>
             </motion.div>
 
-            {/* Bottom Section */}
             <div className="mt-8 text-center text-gray-500 border-t border-gray-700 pt-6">
                 <p>&copy; {new Date().getFullYear()} Hema Mahila Kalyan Samiti. All rights reserved.</p>
             </div>

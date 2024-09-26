@@ -4,7 +4,6 @@ import NGO from '../images/NGO.jpg';
 const ContactUs = () => {
     return (
         <div className="min-h-screen flex flex-col justify-between">
-            {/* Hero Section */}
             <section className="relative text-center">
                 <img 
                     src={NGO} 
@@ -12,7 +11,6 @@ const ContactUs = () => {
                     loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
-                {/* Optional overlay for better text readability */}
                 <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                 <div className="relative z-10 py-20 md:py-32 text-white">
                     <div className="container mx-auto">
@@ -70,10 +68,10 @@ const ContactUs = () => {
                                     <strong>Address:</strong> 221313-Khandha(Sikhari), Varanasi, India
                                 </p>
                                 <p className="text-lg text-gray-700">
-                                    <strong>Phone:</strong> +123 456 7890
+                                    <strong>Phone:</strong>+91-9889503191
                                 </p>
                                 <p className="text-lg text-gray-700">
-                                    <strong>Email:</strong> info@ngo.org
+                                    <strong>Email:</strong> hemamks1992@gmail.com
                                 </p>
                                 <p className="text-lg text-gray-700">
                                     <strong>Working Hours:</strong> Mon-Fri, 9am-6pm

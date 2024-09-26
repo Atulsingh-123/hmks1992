@@ -9,24 +9,24 @@ const teamMembers = [
         image: pramod,
         bio: 'Pramod Pandey is the visionary behind our NGO, driving change with his passion and leadership.',
     },
-    {
-        name: 'Jane Smith',
-        role: 'Project Manager',
-        image: 'https://picsum.photos/200/300',
-        bio: 'Jane ensures our projects are completed on time and within budget.',
-    },
-    {
-        name: 'Alice Johnson',
-        role: 'Community Outreach',
-        image: 'https://picsum.photos/200/300',
-        bio: 'Alice connects with communities to bring real impact on the ground.',
-    },
-    {
-        name: 'Mark Wilson',
-        role: 'Fundraising Coordinator',
-        image: 'https://picsum.photos/200/300',
-        bio: 'Mark leads our fundraising efforts to ensure sustainable growth.',
-    },
+    // {
+    //     name: 'Jane Smith',
+    //     role: 'Project Manager',
+    //     image: 'https://picsum.photos/200/300',
+    //     bio: 'Jane ensures our projects are completed on time and within budget.',
+    // },
+    // {
+    //     name: 'Alice Johnson',
+    //     role: 'Community Outreach',
+    //     image: 'https://picsum.photos/200/300',
+    //     bio: 'Alice connects with communities to bring real impact on the ground.',
+    // },
+    // {
+    //     name: 'Mark Wilson',
+    //     role: 'Fundraising Coordinator',
+    //     image: 'https://picsum.photos/200/300',
+    //     bio: 'Mark leads our fundraising efforts to ensure sustainable growth.',
+    // },
 ];
 
 const TeamMember = ({ name, role, image, bio }) => {

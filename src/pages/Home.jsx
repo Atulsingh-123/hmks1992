@@ -6,6 +6,7 @@ const Slideshow = lazy(() => import('../components/ImageSlider'));
 const NgoDetails = lazy(() => import('../components/Details'));
 const NGOSection = lazy(() => import('../components/NgoSection'));
 const VisionSection = lazy(() => import('../components/Vision'));
+const Certificate = lazy(() => import('../components/Certificate'));
 
 const LoadingSpinner = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
         <NGOSection />
         <VisionSection />
         <NgoDetails />
+        <Certificate/>
         <Slideshow />
         <Footer />
       </div>
